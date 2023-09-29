@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerusalém</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            animation: changeBackground 60s linear infinite; /* Ajuste a duração para 6 segundos de exibição por imagem */
+        }
+
+        @keyframes changeBackground {
+            0% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/128/original/74r7kffrcy5wojuhvk3z50fi7.jpg?');
+            }
+            10% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/129/original/DSC07088.jpg?');
+            }
+            20% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/130/original/formacao_a-ressurreicao-de-jesus-e-um-fato-historico.jpg?');
+            }
+            30% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/132/full/maxresdefault.jpg?');
+            }
+            40% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/133/full/nazareth-1-jesus-house.jpg?');
+            }
+            50% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/134/full/peregrinacao-1200x675.jpg?');
+            }
+            60% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/135/full/pisit-heng-ci1F55HaVWQ-unsplash-min-768x1024.jpg');
+            }
+            70% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/136/full/templo_jesus__1.jpg?');
+            }
+            80% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/138/full/The_Church_of_the_Holy_Sepulchre-Jerusalem.JPG?1695981561');
+            }
+            90% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/139/full/jerusalem-1536x1024.jpeg?');
+            }
+            100% {
+                background-image: url('https://uploaddeimagens.com.br/images/004/622/131/full/golgota.jpg?'); /* Reinicie a sequência */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <script>
+        // O código JavaScript é opcional, mas pode ser usado para pré-carregar as imagens se necessário.
+        // Por exemplo:
+        const imagens = [
+            'imagem1.jpg',
+            'imagem2.jpg',
+            'imagem3.jpg',
+            'imagem4.jpg',
+            'imagem5.jpg',
+            'imagem6.jpg',
+            'imagem7.jpg',
+            'imagem8.jpg',
+            'imagem9.jpg',
+            'imagem10.jpg'
+        ];
+
+        for (const imagem of imagens) {
+            const img = new Image();
+            img.src = imagem;
+        }
+    </script>
+</body>
+</html>
